@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  /* background-color: aqua; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 50%;
+  border: 3px solid hsla(0, 0%, 0%, 0.374);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+.container {
+  width: auto;
+  background-color: #f2f2f2;
+  padding: 30px;
+  padding-right: 40px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  border: 2px solid thistle;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #c0eb75;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: inline;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  width: 45%;
+}
+
+input[type="reset"] {
+  background-color: #ff8787;
+  width: 45%;
+}
+
+input[type="submit"]:hover {
+  background-color: #74b816;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="reset"]:hover {
+  background-color: #e03131;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.email,
+.review {
+  margin-top: 20px;
+}
+
+.date {
+  margin-top: 15px;
+}
+
+.buttons {
+  width: 104%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+fieldset {
+  background-color: white;
+  border: 2px solid thistle;
+  border-radius: 4px;
+  width: 99.6%;
+  margin-top: 15px;
+}
+
+::placeholder {
+  font-family: "Roboto", sans-serif;
+}

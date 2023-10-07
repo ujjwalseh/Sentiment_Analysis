@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Feedback</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Sentiment Analysis Project</h1>
+      <hr />
+
+      <h2>Restaurant Customer Feedback Form</h2>
+
+      <form action="predict/">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter name here" name="name" />
+
+        <div class="date">
+          <label for="date">Date</label>
+          <input type="date" placeholder="Enter E-mail here" name="date" />
+        </div>
+
+        <fieldset>
+          <legend>Did You &#42;</legend>
+          <input type="radio" required />
+          <label for="eat">Dine In</label>
+          <input type="radio" />
+          <label for="eat">Take Out</label>
+        </fieldset>
+
+        <div class="email">
+          <label for="email">E-mail:(optional)</label>
+          <input type="email" placeholder="Enter E-mail here" name="email" />
+        </div>
+
+        <div class="review">
+          <label for="Review">Enter Your Review: &#42;</label>
+          <input
+            type="text"
+            name="Review"
+            placeholder="Enter Review here"
+            required
+          />
+        </div>
+
+        <div class="buttons">
+          <input type="reset" />
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
